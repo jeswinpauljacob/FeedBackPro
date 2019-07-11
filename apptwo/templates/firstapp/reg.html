@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends "firstapp/base.html"%}
+{%block body_block%}
+
+<h1>hello and welcome to the site</h1>
+<h1>this is the index.html page</h1>
+
+<form method="POST">
+    {{form.as_p}}
+    {% csrf_token%}
+    <input type="submit" class='btn btn-primary' value="submit">
+</form>
+
+{%endblock%}
